@@ -84,6 +84,10 @@
             {
                 "command": "apklab.installAllSplitApks",
                 "title": "APKLab: Install all apks"
+            },
+            {
+                "command": "apklab.rebuildAndinstallAllSplitApks",
+                "title": "APKLab: Rebuild and Install all apks"
             }
         ],
         "menus": {
@@ -106,6 +110,10 @@
                 },
                 {
                     "command": "apklab.quarkReport",
+                    "when": "false"
+                },
+                {
+                    "command": "apklab.rebuildAndinstallAllSplitApks",
                     "when": "false"
                 }
             ],
@@ -139,6 +147,12 @@
                     "command": "apklab.installAllSplitApks",
                     "when": "resourceFilename == configs.yml",
                     "group": "navigation"
+
+                },
+                {
+                    "command": "apklab.rebuildAndinstallAllSplitApks",
+                    "when": "resourceFilename == configs.yml",
+                    "group": "navigation"
                 }
             ],
             "editor/title": [
@@ -165,6 +179,12 @@
                 },
                 {
                     "command": "apklab.installAllSplitApks",
+                    "when": "resourceFilename == configs.yml",
+                    "group": "navigation"
+
+                },
+                {
+                    "command": "apklab.rebuildAndinstallAllSplitApks",
                     "when": "resourceFilename == configs.yml",
                     "group": "navigation"
                 }
@@ -203,6 +223,12 @@
                 {
                     "command": "apklab.installAllSplitApks",
                     "when": "resourceFilename == configs.yml",
+                    "group": "navigation"
+
+                },
+                {
+                    "command": "apklab.rebuildAndinstallAllSplitApks",
+                     "when": "resourceFilename == configs.yml",
                     "group": "navigation"
                 }
             ]
