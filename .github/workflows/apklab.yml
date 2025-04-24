@@ -116,5 +116,5 @@ jobs:
         run: |
           yarn add ovsx
           yarn ovsx publish apklab*.vsix -p ${{ secrets.OPEN_VSX_TOKEN }}
-      - name: Release [marketplace]
-        run: yarn vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }} --yarn
+#      - name: Release [marketplace]
+#        run: yarn vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }} --yarn
